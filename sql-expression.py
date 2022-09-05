@@ -1,4 +1,11 @@
-# 'pip install SQLAlchemy' to run project.
+# Carry out the following, in the termianl, to run project:
+# pip3 install psycopg2
+# pip3 install SQLAlchemy
+# set_pg
+# psql
+# CREATE DATABASE chinook;
+# Within chinook db: \i Chinook_PostgreSql.sql 
+
 
 from sqlalchemy import (
     create_engine, Table, Column, Float, ForeignKey, Integer, String, MetaData 
