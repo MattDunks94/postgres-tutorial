@@ -1,8 +1,10 @@
-# Please use the following command in the terminal to set an 
-# environment variable needed for it to work:
-# 'set_pg'
-# And then try the 'psql' command again.
-# Also, 'pip install psycopg2' into the cli.
+# Carry out the following, in the termianl, to run project:
+# pip3 install psycopg2
+# pip3 install SQLAlchemy
+# set_pg
+# psql
+# CREATE DATABASE chinook;
+# Within chinook db: \i Chinook_PostgreSql.sql 
 
 import psycopg2
 
