@@ -1,3 +1,9 @@
+# Please use the following command in the terminal to set an 
+# environment variable needed for it to work:
+# 'set_pg'
+# And then try the 'psql' command again.
+# Also, 'pip install psycopg2' into the cli.
+
 import psycopg2
 
 
