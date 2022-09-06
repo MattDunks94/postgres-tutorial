@@ -4,6 +4,7 @@
 # set_pg
 # psql
 # CREATE DATABASE chinook;
+# \c chinook (To switch to the chinook db)
 # Within chinook db: \i Chinook_PostgreSql.sql 
 
 
