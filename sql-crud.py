@@ -34,7 +34,7 @@ base.metadata.create_all(db)
 ada_lovelace = Programmer(
     first_name="Ada",
     last_name="Lovelace",
-    gender="f",
+    gender="F",
     nationality="British",
     famous_for="First programmer"
 )
@@ -96,10 +96,49 @@ matt_dunks = Programmer(
 # session.add(margaret_hamilton)
 # session.add(bill_gates)
 # session.add(tim_berners_lee)
-session.add(matt_dunks)
+# session.add(matt_dunks)
+
+# Updating a single record (Updating matt_dunks(id=7) famous_for key value)
+# programmer = session.query(Programmer).filter_by(id=7).first()
+# programmer.famous_for = "World President"
 
 # Commit our session to the database. (Similar to git commit)
-session.commit()
+# session.commit()
+
+# Updating multiple records (Updating gender key value to all programmers)
+# people = session.query(Programmer)
+# for person in people:
+#     if person.gender == "F":
+#         person.gender = "Female"
+#     elif person.gender == "M":
+#         person.gender = "Male"
+#     else:
+#         print("Gender not defined")
+#     session.commit()
+
+# Deleting a single record
+# fname = input("Enter a first name: ")
+# lname = input("Enter a last name: ")
+# programmer = session.query(Programmer).filter_by(first_name=fname, last_name=lname).first()
+# Defensive programming
+# if programmer is not None:
+#     print("Programmer found: ", programmer.first_name + " " + programmer.last_name)
+#     confirmation = input("Are you sure you want to delete this record? (y/n) ")
+#     if confirmation.lower() == "y":
+#         session.delete(programmer)
+#         session.commit()
+#         print("Programmer has been deleted")
+#     else: 
+#         print("Programmer not deleted")
+# else:
+#     print("No records found")
+
+# Delete multiple records (Demonstration only!!) 
+# programmers = session.query(Programmer)
+# for programmer in programmers:
+#     session.delete(programmer)
+#     session.commit()
+
 
 # Query the database to find all programmers
 programmers = session.query(Programmer)
