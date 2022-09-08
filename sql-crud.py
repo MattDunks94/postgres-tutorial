@@ -1,3 +1,6 @@
+# Before running programme, session.add each programmer record.
+# And session.commit() 
+
 from sqlalchemy import (
     create_engine, Column, Integer, String
 )
